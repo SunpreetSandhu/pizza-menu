@@ -131,7 +131,10 @@ function Footer() {
       {isOpen ? (
         <Order closeHour={closeHour} openHour={openHour} />
       ) : (
-        <p>We're happy to welcome you between our open hours!</p>
+        <p>
+          We're happy to welcome you between our open hours: Open: {openHour}:00
+          Close: {closeHour}:00
+        </p>
       )}
     </footer>
   );
